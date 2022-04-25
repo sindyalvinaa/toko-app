@@ -33,8 +33,8 @@
                         </li>
                         @foreach($kategori as $r)
                         <li class="nav-item">
-                            <a class="nav-link active" 
-                                aria-current="page" 
+                            <a class="nav-link active"
+                                aria-current="page"
                                 href="{{ url('kategori/'.$r->id) }}">
                                 {{ $r->nama_kategori }}
                             </a>
@@ -43,13 +43,13 @@
                         <li class="nav-item">
                             @if(isset(auth()->user()->name))
                                 <a class="nav-link active bg-primary text-white" href="{{ url('admin') }}">Dashboard</a>
-                            @else 
+                            @else
                                 <a class="nav-link active" href="{{ url('login') }}">Login</a>
                             @endif
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" 
-                                data-bs-toggle="modal" data-bs-target="#ModalSearch" 
+                            <a class="nav-link active" href="#"
+                                data-bs-toggle="modal" data-bs-target="#ModalSearch"
                                 tabindex="-1" aria-disabled="true">
                                 <i class="fas fa-search"></i>
                             </a>
@@ -60,7 +60,7 @@
         </nav>
         <!-- end navbar -->
         <!-- main -->
-        @php 
+        @php
             $profil = App\Models\User::where('id', 1)->first();
         @endphp
         <div class="clearfix  mt-5 pt-4"></div>
@@ -87,16 +87,14 @@
                         <a href="#" class="text-terhubung"><i class="fab fa-news"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="text-terhubung"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="copyright">
             <div class="container text-center">
-                Copyright &copy; <?= date('Y');?> {{ config('app.name') }} All Reserved
+                Copyright &copy; <?= date('Y');?> {{ config('app.name') }} || Sindy Alvina Khoiriyah
                 <br>
-                Web Belajar Laravel Codekop.com
             </div>
         </div>
         <!-- end footer -->
@@ -125,15 +123,15 @@
             </div>
         </div>
         <!-- modal cari -->
-        
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Bootstrap JS -->
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
         @yield('javascript')
   </body>

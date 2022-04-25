@@ -20,7 +20,7 @@
             <label for="">Nama Produk</label>
             <input type="text" class="form-control @error("nama_produk") is-invalid @enderror" value="{{$edit->nama_produk}}" name="nama_produk" id="nama_produk" placeholder="">
         </div>
-        
+
         <div class="form-group mt-3">
             <label for="">Deskripsi</label>
             <textarea class="form-control @error("deskripsi") is-invalid @enderror" rows="8" name="deskripsi" id="deskripsi" placeholder="">{{$edit->deskripsi}}</textarea>
@@ -31,13 +31,13 @@
         </div>
         <div class="form-group mt-3">
             <label for="">Gambar <small class="text-danger ms-1">* Opsional</small></label>
-            <input type="file" class="form-control @error("gambar") is-invalid @enderror" value="{{old("gambar")}}" 
+            <input type="file" class="form-control @error("gambar") is-invalid @enderror" value="{{old("gambar")}}"
                  name="gambar" id="gambar" placeholder="">
             @error("gambar")
                 <span class="text-danger">{{ $message }}</span>
             @enderror
             <a href="{{url_images('gambar', $edit->gambar)}}" target="_blank">
-                <img src="{{url_images('gambar', $edit->gambar)}}" class="img-fluid mt-3" style="width:80px;">
+                <img src="{{asset('gambar', $edit->gambar)}}" class="img-fluid mt-3" style="width:80px;">
             </a>
         </div>
         <input type="hidden" value="{{$edit->id}}" name="id">

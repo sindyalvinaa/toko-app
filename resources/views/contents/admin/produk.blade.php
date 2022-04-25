@@ -17,7 +17,7 @@
                             <div class="input-group mb-3">
                                 <input type="text" value="{{$request->get('search')}}" name="search" id="search" class="form-control" placeholder="Cari Produk" aria-describedby="helpId">
                                 @if($request->get('search'))
-                                    <a href="{{ route('admin.produk') }}" 
+                                    <a href="{{ route('admin.produk') }}"
                                         class="input-group-text btn btn-success btn-md">
                                         <i class="fas fa-sync pr-2"></i>Refresh</a>
                                 @endif
@@ -43,20 +43,20 @@
                             @forelse($produk as $r)
                             <tr>
                                 <td>{{$no}}</td>
-                                <td><img src="{{url_images('gambar', $r->gambar)}}" class="img-fluid" style="width:80px;"></td>      
-                                <td>{{$r->nama_kategori}}</td>      
-                                <td>{{$r->nama_produk}}</td>    
-                                <td>Rp{{number_format($r->harga_jual)}},-</td>      
-                                <td>{{$r->created_at}}</td> 
+                                <td><img src="{{asset('gambar/'.$r->gambar)}}" class="img-fluid" style="width:80px;"></td>
+                                <td>{{$r->nama_kategori}}</td>
+                                <td>{{$r->nama_produk}}</td>
+                                <td>Rp{{number_format($r->harga_jual)}},-</td>
+                                <td>{{$r->created_at}}</td>
                                 <td>
-                                    <a href="javascript:void(0)" data-id="{{ $r->id }}" 
+                                    <a href="javascript:void(0)" data-id="{{ $r->id }}"
                                         class="btn btn-success btn-sm ubah" title="Edit">
-                                        <i class="fa fa-edit"></i>  
-                                    </a>   
-                                    <a href="{{url("admin/produk/delete/$r->id")}}" 
-                                        class="btn btn-danger btn-sm" 
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="{{url("admin/produk/delete/$r->id")}}"
+                                        class="btn btn-danger btn-sm"
                                         onclick="javascript:return confirm(`Data ingin dihapus ?`);" title="Delete">
-                                        <i class="fa fa-times"></i> 
+                                        <i class="fa fa-times"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -135,9 +135,9 @@
         </div>
     </div>
     <div class="modal fade" id="modelIdEdit" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">        
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" id="edit-content">
-                
+
             </div>
         </div>
     </div>
