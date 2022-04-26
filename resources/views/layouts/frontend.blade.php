@@ -7,7 +7,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="Toko Codekop Menjual berbagai macam hijab, jaket, aksesoris dan pakaian islami pria dan wanita" name="description">
+        <meta content="Technology Store adalah salah satu toko komputer
+        di kawasan Kedungadem Bojonegoro yang
+        menyediakan berbagai macam aksesoris komputer
+        dengan kualitas yang baik." name="description">
         <meta content="{{ $title ?? 'App Toko' }}" name="keywords">
         <meta property="og:locale" content="ID_id"/>
         <meta property="og:type" content="website"/>
@@ -81,7 +84,7 @@
                         <br><br>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Tetap Terhubung Dengan Kami</h4>
+                        <h4>Hubungi Kami</h4>
                         <a href="#" class="text-terhubung"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-terhubung"><i class="fab fa-news"></i></a>

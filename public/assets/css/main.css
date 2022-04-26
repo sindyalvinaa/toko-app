@@ -46,7 +46,7 @@ body{
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    background-color:#3c73a8;
+    background-color:palevioletred;
     backdrop-filter: blur(5px);
     color: #ffffff;
     padding-left:15px;
@@ -68,13 +68,13 @@ body{
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
     color: #ffffff;
-    background-color:#3c73a8;
+    background-color:palevioletred;
     backdrop-filter: blur(5px);
     font-weight: 500;
 }
 
 .promosi{
-    background:#ffe5d8;
+    background:palevioletred;
     color:#e0160f;
     font-weight: bold;
 }
@@ -91,17 +91,17 @@ body{
 
 /** Background **/
 .bg-primary{
-    background-color: #0c4e68 !important;
+    background-color: palevioletred !important;
 }
 .bg-success{
-    background-color: #47993a !important;
+    background-color: palevioletred !important;
 }
 .bg-danger{
-    background-color: #d12c24 !important;
+    background-color: palevioletred !important;
 }
 /** text color **/
 .text-primary{
-    color: #0c4e68 !important;
+    color: palevioletred !important;
 }
 .text-success{
     color: #47993a !important;
@@ -111,19 +111,19 @@ body{
 }
 /* button */
 .btn-primary{
-    background-color: #0c4e68 !important;
+    background-color: palevioletred !important;
     border: 0px;
 }
 .btn-primary:hover{
-    background-color: #136788 !important;
+    background-color: palevioletred !important;
     border: 0px;
 }
 .btn-success{
-    background-color: #47993a !important;
+    background-color: cornflowerblue !important;
     border: 0px;
 }
 .btn-success:hover{
-    background-color: #52b842 !important;
+    background-color: cornflowerblue !important;
     border: 0px;
 }
 .btn-danger{
@@ -163,7 +163,7 @@ body{
 }
 
 .text-produk:hover{
-    color:#3c73a8;
+    color:#333;
     font-weight: bold;
 }
 
@@ -172,7 +172,7 @@ body{
 }
 
 .official{
-    background-color: #f1f1f1;
+    background-color: palevioletred;
     color:#333;
 }
 
@@ -186,7 +186,7 @@ body{
 
 .footer{
     margin-top:3pc;
-    background-color: #f1f1f1;
+    background-color: palevioletred;
     color:#333;
     padding-top:4pc;
     padding-bottom: 4pc;
@@ -208,7 +208,7 @@ body{
 }
 
 .copyright{
-    background-color: #e7e7e7;
+    background-color: palevioletred;
     color:#333;
     padding-top:15px;
     padding-bottom:10px;
@@ -222,7 +222,7 @@ body{
 
 /* Tablet */
 @media only screen and (min-width: 671px) and (max-width: 960px) {
-    
+
     #gambar_slider{
         height:350px !important;
         object-fit: cover;
